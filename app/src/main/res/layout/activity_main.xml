@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/grandienbackground"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="168dp"
+        android:layout_height="142dp"
+        android:layout_marginTop="148dp"
+        app:layout_constraintEnd_toEndOf="@+id/textView"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="@+id/textView"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/pohon_hijau" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppinsbold"
+        android:text="Sistem Hidroponik Otomatis"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/textView3"
+        app:layout_constraintStart_toStartOf="@+id/textView3"
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        app:layout_constraintVertical_bias="0.057" />
+
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/poppinsregular"
+        android:padding="20dp"
+        android:text="Selamat datang di Sistem Hidroponik Otomatis berbasis IoT dan Kecerdasan Buatan. Aplikasi ini mendukung pertanian berkelanjutan di Parepare dengan teknologi modern, memudahkan petani mengelola nutrisi dan memantau kondisi tanaman secara real-time. Solusi ini diharapkan meningkatkan efisiensi pertanian dan menjaga keberlanjutan lingkungan."
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="@+id/btn_login"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="@+id/btn_login"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <Button
+        android:id="@+id/btn_login"
+        android:layout_width="wrap_content"
+        android:layout_height="57dp"
+        android:layout_marginTop="32dp"
+        android:width="300dp"
+        android:background="@drawable/btn_shape"
+        android:fontFamily="@font/poppinsbold"
+        android:text="Masuk"
+        android:textColor="@color/white"
+        android:textSize="18dp"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+<!--    <Button-->
+<!--        android:id="@+id/btn_regis"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="57dp"-->
+<!--        android:layout_marginTop="20dp"-->
+<!--        android:width="300dp"-->
+<!--        android:background="@drawable/btn_shape"-->
+<!--        android:fontFamily="@font/poppinsbold"-->
+<!--        android:text="Daftar"-->
+<!--        android:textColor="@color/white"-->
+<!--        android:textSize="18dp"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintHorizontal_bias="0.495"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/btn_login" />-->
+</androidx.constraintlayout.widget.ConstraintLayout>

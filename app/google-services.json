@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "286085660493",
+    "firebase_url": "https://ptcarina-d9364-default-rtdb.firebaseio.com",
+    "project_id": "ptcarina-d9364",
+    "storage_bucket": "ptcarina-d9364.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:286085660493:android:439682c069cd06cc06c104",
+        "android_client_info": {
+          "package_name": "com.example.ptcarina"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBCoRJsNxNr_9hDzVhXYwABaf8OFrk4fFo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

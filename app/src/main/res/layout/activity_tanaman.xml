@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/grandienbackground"
+    tools:context=".TanamanActivity">
+
+    <TextView
+        android:id="@+id/tanaman"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="216dp"
+        android:fontFamily="@font/poppinsbold"
+        android:text="Silahkan Input Tanaman Anda"
+        android:textAlignment="center"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <!--    <EditText-->
+    <!--        android:id="@+id/JenisTanaman"-->
+    <!--        android:layout_width="380dp"-->
+    <!--        android:layout_height="60dp"-->
+    <!--        android:layout_marginTop="32dp"-->
+    <!--        android:background="@drawable/btn_shape"-->
+    <!--        android:backgroundTint="@color/hijaugradien"-->
+    <!--        android:ems="10"-->
+    <!--        android:fontFamily="@font/poppinsregular"-->
+    <!--        android:hint="Jenis Tanaman"-->
+    <!--        android:inputType="text"-->
+    <!--        android:paddingLeft="20dp"-->
+    <!--        app:layout_constraintEnd_toEndOf="parent"-->
+    <!--        app:layout_constraintHorizontal_bias="0.516"-->
+    <!--        app:layout_constraintStart_toStartOf="parent"-->
+    <!--        app:layout_constraintTop_toBottomOf="@+id/tanaman" />-->
+
+    <EditText
+        android:id="@+id/UmurTanaman"
+        android:layout_width="380dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/btn_shape"
+        android:backgroundTint="@color/hijaugradien"
+        android:ems="10"
+        android:fontFamily="@font/poppinsregular"
+        android:hint="Umur Tanaman"
+        android:inputType="number"
+        android:paddingLeft="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.516"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spinnerJenisTanaman"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/ButtonNext"
+        android:layout_width="378dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="28dp"
+        android:text="Next"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.545"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/UmurTanaman"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.072"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/arrow_back" />
+
+    <Spinner
+        android:id="@+id/spinnerJenisTanaman"
+        android:layout_width="380dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="28dp"
+        android:autofillHints="input nama tanaman "
+        android:background="@drawable/sprinter_background"
+        android:entries="@array/jenis_tanaman_array"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.516"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tanaman" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

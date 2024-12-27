@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/grandienbackground"
+    tools:context=".loginActivity">
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppinsbold"
+        android:text="Selamat Datang"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toTopOf="@+id/email"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView1"
+        tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:id="@+id/imageView_arrow_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="30dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/arrow_back" />
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="168dp"
+        android:layout_height="142dp"
+        android:layout_marginStart="122dp"
+        android:layout_marginTop="104dp"
+        android:layout_marginEnd="122dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/imageView_arrow_login"
+        app:srcCompat="@drawable/pohon_hijau" />
+
+    <EditText
+        android:id="@+id/email"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="392dp"
+        android:layout_marginRight="30dp"
+        android:background="@drawable/btn_shape"
+        android:backgroundTint="@color/hijaugradien"
+        android:ems="10"
+        android:fontFamily="@font/poppinsregular"
+        android:hint="Username"
+        android:inputType="text"
+        android:paddingLeft="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/pass"
+        android:layout_width="350dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/btn_shape"
+        android:backgroundTint="@color/hijaugradien"
+        android:ems="10"
+        android:fontFamily="@font/poppinsregular"
+        android:hint="Kata Sandi"
+        android:inputType="textPassword"
+        android:paddingLeft="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/email" />
+
+    <Button
+        android:id="@+id/btn_masuk_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="22dp"
+        android:layout_marginRight="30dp"
+        android:width="300dp"
+        android:background="@drawable/btn_shape"
+        android:fontFamily="@font/poppinsbold"
+        android:text="Masuk"
+        android:textColor="@color/white"
+        android:textSize="18dp"
+        app:layout_constraintTop_toBottomOf="@+id/pass" />
+
+
+<!--    <TextView-->
+<!--        android:id="@+id/textView2"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginStart="120dp"-->
+<!--        android:layout_marginTop="12dp"-->
+<!--        android:fontFamily="@font/poppinsregular"-->
+<!--        android:text="Belum punya akun?"-->
+<!--        android:textSize="12dp"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/btn_masuk_login"-->
+<!--        tools:ignore="MissingConstraints,TextSizeCheck" />-->
+
+<!--    <TextView-->
+<!--        android:id="@+id/Link_daftar"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginTop="12dp"-->
+<!--        android:fontFamily="@font/poppinssemibold"-->
+<!--        android:text="Daftar"-->
+<!--        android:textColor="@color/black"-->
+<!--        android:textSize="12sp"-->
+<!--        app:constraintSet="@id/textView2"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintHorizontal_bias="0.075"-->
+<!--        app:layout_constraintStart_toEndOf="@+id/textView2"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/btn_masuk_login" />-->
+
+<!--    <TextView-->
+<!--        android:id="@+id/textView4"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginTop="4dp"-->
+<!--        android:fontFamily="@font/poppinsregular"-->
+<!--        android:text="Lupa Kata Sandi?"-->
+<!--        android:textColor="@color/coklattext"-->
+<!--        android:textSize="12dp"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintHorizontal_bias="0.498"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/Link_daftar"-->
+<!--        tools:ignore="TextSizeCheck" />-->
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
